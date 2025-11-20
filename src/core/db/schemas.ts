@@ -1,5 +1,6 @@
 import type {RxJsonSchema} from "rxdb";
 import type {ActorDocType} from "../types/actor.ts";
+import type {WorldStateDocType} from "../types/world.ts";
 
 export const actorSchema: RxJsonSchema<ActorDocType> = {
     version: 0,
@@ -43,3 +44,25 @@ export const actorSchema: RxJsonSchema<ActorDocType> = {
     },
     required: ['id', 'name', 'age', 'stats', 'createdAt']
 };
+
+export const worldSchema: RxJsonSchema<WorldStateDocType> = {
+    version: 0,
+    primaryKey: 'id',
+    type: 'object',
+    properties: {
+        id: {
+            type: 'string',
+            maxLength: 100
+        },
+        year: {
+            type: 'number',
+        },
+        month: {
+            type: 'number',
+        },
+        turnCount: {
+            type: 'number',
+        },
+    },
+    required: ['id', 'year', 'month', 'turnCount']
+}
