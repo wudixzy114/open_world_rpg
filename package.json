@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "docs:api": "typedoc"
   },
   "dependencies": {
     "ajv": "^8.17.1",
@@ -21,6 +22,8 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.8.1",
     "sass": "^1.94.2",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-vue": "^1.5.1",
     "typescript": "~5.9.3",
     "unocss": "^66.5.7",
     "vite": "^7.2.4",
