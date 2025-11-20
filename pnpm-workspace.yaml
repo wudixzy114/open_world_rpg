@@ -1,0 +1,5 @@
+ignoredBuiltDependencies:
+  - '@firebase/util'
+  - '@parcel/watcher'
+  - protobufjs
+  - rxdb
